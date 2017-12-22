@@ -22,6 +22,5 @@ git commit
 git push
 填写GitHub的用户名和密码
 
-
-####
-GitHub客户端打开
+###在本地目录添加一个git项目
+git init
