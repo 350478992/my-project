@@ -1,0 +1,23 @@
+
+git clone url
+
+查看工作区的状态
+git status
+此时字体是红色（表示该文件还未提交过到该仓库）
+
+添加到暂存区
+git add git使用说明.txt 
+
+git status
+此时字体是绿色（可以从暂存区中撤销）
+
+从暂存区中撤销
+git reset git使用说明.txt
+
+提交到本地工作区
+git commit
+填写备注
+
+添加到git 仓库
+git push
+填写GitHub的用户名和密码
