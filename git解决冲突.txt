@@ -1,0 +1,15 @@
+同一个分支的多人提交产生的 冲突
+1.git add <file>
+2.git commit -m <备注>
+3.先将本地修改存储起来
+	git stash
+4.拉去他人的修改：
+	git pull
+5. 还原暂存的内容
+	git stash pop stash@{0}
+6. 解决文件中冲突的的部分
+	其中Updated upstream 和=====之间的内容就是pull下来的内容，====和stashed changes之间的内容就是本地修改的内容。碰到这种情况，git也不知道哪行内容是需要的，所以要自行确定需要的内容。
+
+7.git add <file>
+8.git commit -m <备注>
+9.git push
