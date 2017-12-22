@@ -21,3 +21,7 @@ git commit
 添加到git 仓库
 git push
 填写GitHub的用户名和密码
+
+
+####
+GitHub客户端打开
