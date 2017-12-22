@@ -22,6 +22,9 @@ git commit
 git push
 填写GitHub的用户名和密码
 
+###在本地目录添加一个git项目
+git init
+git add file1.txt
+git add file2.txt file3.txt
+git commit -m "add 3 files."
 
-####
-GitHub客户端打开
