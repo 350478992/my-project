@@ -1,0 +1,20 @@
+###版本回退
+
+查看历史push日志（注意记住commid 后的 SHA1编码）
+	git log
+	简化版git log --pretty=oneline
+
+Git必须知道当前版本是哪个版本，在Git中，用HEAD表示当前版本
+回退到上一个版本(HEAD^)：
+	git reset --hard HEAD^
+	
+回退到上上一个版本(HEAD^^)：
+	git reset --hard HEAD^^
+回退到前N个版本(HEAD~n)：
+	git reset --hard HEAD~20
+
+重新返回到最新的版本（记住之前commit的SHA1编号）
+	git reset --hard commit id
+
+查看之前敲过的命令（可以找到commit id）
+	git reflog
