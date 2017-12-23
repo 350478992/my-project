@@ -15,4 +15,26 @@
 9.git push
 
 
-hello world
+
+1.切换分支，改变分支内容，
+然后提交，在切换到主线合并分支
+	bit checkout feature1
+	vim file
+2.提交分支内容
+	git add file
+	git commit -m "备注"
+3.切换到主线 -> 修改文件 -> 合并分支
+	git checkout master
+	vim file
+	git merge feature1
+	Git告诉我们，file.txt文件存在冲突，必须手动解决冲突后再提交。git status也可以告诉我们冲突的文件：
+2.查看冲突的文件
+	Git用<<<<<<<，=======，>>>>>>>标记出不同分支的内容，我们修改后保存
+3.重新提交
+	git add file
+	git commit -m "备注"
+
+4.用带参数的git log也可以看到分支的合并情况：
+	git log --graph --pretty=oneline --abbrev-commit
+5.删除feature1分支：
+	git branch -d feature1
